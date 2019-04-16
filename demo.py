@@ -115,7 +115,7 @@ def main(yolo):
                 2,
             )
 
-        cv2.imshow("", frame)
+        # cv2.imshow("", frame)
 
         if writeVideo_flag:
             # save a frame
