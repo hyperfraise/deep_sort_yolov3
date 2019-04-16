@@ -49,14 +49,14 @@ def main(yolo):
         w = int(video_capture.get(3))
         h = int(video_capture.get(4))
         fourcc = cv2.VideoWriter_fourcc(*"MJPG")
-        out = cv2.VideoWriter("output.avi", fourcc, 1, (w, h))
+        out = cv2.VideoWriter("output.avi", fourcc, 2.5, (w, h))
         list_file = open("detection.txt", "w")
         frame_index = -1
 
     fps = 0.0
     while True:
         ret, frame = video_capture.read()  # frame shape 640*480*3
-        for i in range(24):
+        for i in range(10):
             ret, frame = video_capture.read()  # frame shape 640*480*3
 
         if ret != True:
